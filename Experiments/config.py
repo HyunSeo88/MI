@@ -18,7 +18,7 @@ class TrainingConfig:
     scale: int = 2
     
     # 데이터 설정
-    data_path: str = './data/DV2K'
+    data_path: str = './data/DIV2K'
     patch_size: int = 96
     batch_size: int = 16
     num_workers: int = 0  # Windows 호환성을 위해 0으로 기본 설정
@@ -131,7 +131,7 @@ def create_argument_parser():
                        help='Super resolution scale factor')
     
     # 데이터 관련
-    parser.add_argument('--data-path', type=str, default='./data/DV2K',
+    parser.add_argument('--data-path', type=str, default='./data/DIV2K',
                        help='Path to dataset')
     parser.add_argument('--patch-size', type=int, default=96,
                        help='HR patch size for training')
