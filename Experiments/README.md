@@ -8,7 +8,6 @@
 Experiments/
 ├── data/                 # 데이터셋 (DIV2K)
 ├── results/              # 학습 결과물들
-├── test_div2k.ipynb     # 데이터셋 테스트 노트북
 ├── dataset.py           # SR 데이터셋 로더
 ├── model_loader.py      # 모델 로더
 ├── engine.py            # 학습/평가 엔진

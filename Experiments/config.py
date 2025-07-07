@@ -81,10 +81,11 @@ def get_default_model_params(model_name: str, scale: int = 2) -> dict:
             'res_scale': 1.0
         },
         'RCAN': {
-            'n_colors': 3,
+            'in_channels': 3,
             'n_feats': 64,
             'kernel_size': 3,
-            'n_resblocks': 20,
+            'num_rg': 10,        # number of residual groups
+            'num_rcab': 20,      # number of RCAB blocks
             'scale': scale
         },
         'ESRGAN': {

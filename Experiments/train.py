@@ -323,7 +323,7 @@ class SuperResolutionTrainer:
                 log_msg += f" | Time: {format_time(epoch_time)}"
                 
                 if is_best:
-                    log_msg += " | 🌟 BEST!"
+                    log_msg += " | BEST!"
                 
                 self.logger.info(log_msg)
                 

@@ -162,10 +162,11 @@ def get_model_configs():
             'res_scale': 1.0
         },
         'RCAN': {
-            'n_colors': 3,
+            'in_channels': 3,
             'n_feats': 64,
             'kernel_size': 3,
-            'n_resblocks': 20,
+            'num_rg': 10,
+            'num_rcab': 20,
             'scale': 2
         },
         'ESRGAN': {
