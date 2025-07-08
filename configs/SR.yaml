@@ -1,0 +1,42 @@
+# Super-Resolution 도메인 설정
+
+# 기본 훈련 설정
+epochs: 100
+batch_size: 16
+device: 'cuda'
+
+# 데이터 설정
+data_path: 'data/DIV2K'  # 예시 경로
+num_workers: 4
+
+# EDSR 모델 설정
+edsr:
+  n_colors: 3
+  n_feats: 64
+  kernel_size: 3
+  n_resblocks: 16
+  scale: 4
+  res_scale: 1.0
+  lr: 1e-4
+  lr_step: 50
+
+# RCAN 모델 설정  
+rcan:
+  in_channels: 3
+  n_feats: 64
+  kernel_size: 3
+  num_rg: 10
+  num_rcab: 20
+  scale: 4
+  lr: 1e-4
+  lr_step: 50
+  lr_gamma: 0.5
+
+# SRGAN 모델 설정
+srgan:
+  lambda_adv: 1e-3
+  lrG: 1e-4
+  lrD: 1e-4
+  lr_stepG: 50
+  lr_stepD: 50
+  lr_gamma: 0.5

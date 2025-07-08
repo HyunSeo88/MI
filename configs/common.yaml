@@ -1,0 +1,22 @@
+# 공통 설정 파일
+# 모든 도메인에서 공통으로 사용되는 설정들
+
+# 기본 실행 환경
+device: 'cuda'  # 'cuda' or 'cpu'
+seed: 42
+
+# 데이터 로딩 설정
+num_workers: 4
+pin_memory: True
+
+# 체크포인트 설정
+checkpoint_dir: 'checkpoints'
+save_every: 5  # 에폭마다 체크포인트 저장
+
+# 로깅 설정
+log_dir: 'logs'
+log_every: 10  # 배치마다 로그 출력
+
+# 재현성
+deterministic: True
+benchmark: False

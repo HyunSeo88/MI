@@ -1,0 +1,20 @@
+# NLP (Natural Language Processing) 도메인 설정
+
+# 기본 훈련 설정
+epochs: 50
+batch_size: 32
+device: 'cuda'
+
+# 데이터 설정
+data_path: 'data/nlp_dataset'  # 예시 경로
+num_workers: 4
+max_seq_length: 512
+
+# 예시 모델 설정 (향후 추가될 모델들을 위한 템플릿)
+bert_classifier:
+  num_classes: 2
+  hidden_dim: 768
+  dropout: 0.1
+  lr: 2e-5
+  lr_step: 20
+  lr_gamma: 0.5 
